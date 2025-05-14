@@ -1,0 +1,21 @@
+/* Base */ 
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+	
