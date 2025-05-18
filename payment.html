@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+<link rel="shortcut icon" href="./favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+<link rel="manifest" href="./favicon/site.webmanifest" />
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/man-B3w1PQTV.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/man-BsuSlGKG.css">
+</head>
+<body>
+    <div class="payment">
+        <div class="payment__background"><img src="./iamges/img-bg3.jpg" alt=""></div>
+        <div class="payment__wrapper">
+            <div class="container">
+                <section class="payment__main">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="payment__title">ONLINE PAYMENT</h1>
+                        </div>
+                        <div class="col-6 offset-3 col-md-12 offset-sm-0">
+                            <form  class="payment__form" autocomplete="off" spellcheck="false">
+                                <section>
+                                    <h2 class="payment__heading">Thông tin vận chuyển và thanh toán</h2>
+                                    <div class="account">
+                                        <label  class="account__label">
+                                            <span>Tên</span>
+                                            <input type="text" name="name" >
+                                        </label>
+                                        <div class="line"></div>
+                                        <label  class="account__label">
+                                            <span>E-mail</span>
+                                            <input type="mail" name="mail" >
+                                        </label>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <h2 class="payment__heading">Thông tin thanh toán</h2>
+                                    <div class="account-info">
+                                        <label  class="account-info__label">
+                                            <i class="fa-solid fa-money-check"></i>
+                                            <span>Số thẻ</span>
+                                            <input type="text" name="card-number" placeholder="Card number">
+                                        </label>
+                                        <div class="line"></div>
+                                        <label  class="account-info__label">
+                                            <span>Hết hạn</span>
+                                            <input type="text" name="date" placeholder="MM/YY">
+                                        </label>
+                                        <div class="line"></div>
+                                        <label  class="account-info__label">
+                                            <span>Cvc</span>
+                                            <input type="text" name="cvc" placeholder="xxx">
+                                        </label>
+                                    </div>
+                                </section>
+                                <button class="payment__btn "><span>Thanh toán</span></button>
+                                <button class="payment__btn payment__btn--cancel"><span>Huỷ bỏ</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
