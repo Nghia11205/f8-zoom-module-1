@@ -123,6 +123,7 @@
 
 @include mixin.screen(sm){
     .header{
+        border-bottom: 1px solid#F2F2F2;
         background: #fff;
         height: 106px;
         &__info, section, &__contact{

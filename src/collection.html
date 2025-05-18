@@ -1,13 +1,1398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>collection</title>
-    <%- include("./partials/head.ejs")  %>
-</head>
-<body>
-    
-    <script type="module" src="./man.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>collection</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <div class="collection">
+            <%- include("./partials/header.ejs") %>
+            <div class="collection-main">
+                <div class="container">
+                    <div class="collection-bar">
+                        <label for="sub">
+                            <div class="svg">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="12"
+                                    height="10"
+                                    viewBox="0 0 12 10"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M11.3334 1H0.666707M9.33337 5H0.666707M7.33337 9H0.666707"
+                                        stroke="white"
+                                        stroke-width="1.33333"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="collection-card">
+                            <span class="voucher">Card Voucher</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>Mobile card</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="collection-sidebar">
+                                <div class="collection-sidebar__product-list">
+                                    <h1>Danh mục sản phẩm</h1>
+                                    <div class="line"></div>
+                                    <ul>
+                                        <li><a href="">Mobile Game</a></li>
+                                        <li><a href="">Game Cards</a></li>
+                                        <li><a href="">Payment Cards</a></li>
+                                        <li><a href="">Gift Cards</a></li>
+                                        <li><a href="">Game Console</a></li>
+                                        <li><a href="">Game CD-Key</a></li>
+                                        <li><a href="">Video Streaming</a></li>
+                                        <li><a href="">Music</a></li>
+                                        <li><a href="">Shopping</a></li>
+                                        <li>
+                                            <a href="">Telco Prepaid Cards</a>
+                                        </li>
+                                        <li><a href="">Tools</a></li>
+                                        <li><a href="">Software</a></li>
+                                        <li><a href="">Social App</a></li>
+                                        <li><a href="">Freebie Codes</a></li>
+                                        <li><a href="">Subscript</a></li>
+                                    </ul>
+                                </div>
+                                <div class="collection-sidebar-price">
+                                    <h2>Khoảng giá</h2>
+                                    <div class="line"></div>
+                                    <div class="price-content">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="229"
+                                            height="19"
+                                            viewBox="0 0 229 19"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M9.09393 9.09387H214.946"
+                                                stroke="#E5E5E5"
+                                                stroke-width="4.13357"
+                                                stroke-linecap="round"
+                                            />
+                                            <path
+                                                d="M9.09393 9.09387H128.968"
+                                                stroke="#ED5A25"
+                                                stroke-width="4.13357"
+                                                stroke-linecap="round"
+                                            />
+                                            <circle
+                                                cx="9.09386"
+                                                cy="9.09386"
+                                                r="9.09386"
+                                                fill="#ED5A25"
+                                            />
+                                            <circle
+                                                cx="219.906"
+                                                cy="9.09386"
+                                                r="8.6805"
+                                                fill="#E5E5E5"
+                                                stroke="#E5E5E5"
+                                                stroke-width="0.826715"
+                                            />
+                                        </svg>
+                                        <span>Price: 500.000 - 1.000.000 </span>
+                                        <a href="">Lọc</a>
+                                    </div>
+                                </div>
+                                <div class="collection-sidebar-evaluate">
+                                    <h2>Đánh giá</h2>
+                                    <div class="line"></div>
+                                    <div class="evaluate-content">
+                                        <label class="evaluate-content__five">
+                                            <input
+                                                type="checkbox"
+                                                id="checked"
+                                                hidden
+                                            />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span> (120k)</span>
+                                        </label>
+                                        <label class="evaluate-content__five">
+                                            <input
+                                                type="checkbox"
+                                                id="checked"
+                                                hidden
+                                            />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                            </div>
+                                            <span> (120k)</span>
+                                        </label>
+                                        <label class="evaluate-content__five">
+                                            <input
+                                                type="checkbox"
+                                                id="checked"
+                                                hidden
+                                            />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                            </div>
+                                            <span> (120k)</span>
+                                        </label>
+                                        <label class="evaluate-content__five">
+                                            <input
+                                                type="checkbox"
+                                                id="checked"
+                                                hidden
+                                            />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                            </div>
+                                            <span> (120k)</span>
+                                        </label>
+                                        <label class="evaluate-content__five">
+                                            <input
+                                                type="checkbox"
+                                                id="checked"
+                                                hidden
+                                            />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                                <i
+                                                    class="fa-solid fa-star gray"
+                                                ></i>
+                                            </div>
+                                            <span> (120k)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="collection-sidebar__brands">
+                                    <h2>Thương hiệu</h2>
+                                    <div class="line"></div>
+                                    <div class="brands">
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Apple</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Google</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Microsoft</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Amazon</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>MCDonald's</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Visa</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Tencent</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Louis Vultton</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>MasterCard</span>
+                                        </label>
+                                        <label class="brands__label">
+                                            <input type="checkbox" hidden />
+                                            <div class="checkbox">
+                                                <i
+                                                    class="fa-solid fa-check"
+                                                ></i>
+                                            </div>
+                                            <span>Coca-Cola</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="collection-sidebar__banner">
+                                    <div class="img">
+                                        <img
+                                            src="./iamges/img-collection.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3>Card voucher hot news</h3>
+                                    <button class="collection__btn">
+                                        <span>View all</span>
+                                        <div class="icon">
+                                            <i
+                                                class="fa-solid fa-arrow-right"
+                                            ></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 col-md-12">
+                            <div class="collection-content">
+                                <div class="collection-sort">
+                                    <span>Showing 1-12 </span>
+                                    <div class="sort">
+                                        <span>Sort by latest</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="collection-list">
+                                    <div
+                                        class="row row-cols-4 row-cols-md-3 row-cols-xs-2 gx-2 gy-4"
+                                    >
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card1.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card2.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card3.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card4.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card19.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card20.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card7.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card21.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card10.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card11.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card12.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card13.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card22.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card1.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card23.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card4.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card10.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card11.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card12.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card-item">
+                                                <div class="img">
+                                                    <img
+                                                        src="./iamges/img-card13.png"
+                                                        alt=""
+                                                        class="card-item__img"
+                                                    />
+                                                    <div
+                                                        class="card-item__icon"
+                                                    >
+                                                        <img
+                                                            src="./iamges/img-heart.svg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <h5>
+                                                    Target Gift Card 50$ (US)-
+                                                    Order
+                                                </h5>
+                                                <span>120.000 ~ 134.000</span>
+
+                                                <button class="btn--card">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="17"
+                                                        viewBox="0 0 20 17"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M1.72511 1.94266C1.52901 1.94266 1.34094 2.02056 1.20228 2.15922C1.06362 2.29788 0.985718 2.48595 0.985718 2.68205C0.985718 2.87815 1.06362 3.06621 1.20228 3.20488C1.34094 3.34354 1.52901 3.42144 1.72511 3.42144H3.36656L5.30672 11.185C5.4716 11.8431 6.0609 12.2941 6.73892 12.2941H15.9591C16.6268 12.2941 17.1939 11.8505 17.3691 11.2072L19.2856 4.16083H17.7374L15.9584 10.8153H6.73818L4.79876 3.05174C4.71864 2.73324 4.53396 2.45083 4.27429 2.24974C4.01462 2.04865 3.69498 1.94052 3.36656 1.94266H1.72511ZM15.0341 12.2941C13.8178 12.2941 12.816 13.296 12.816 14.5123C12.816 15.7286 13.8178 16.7305 15.0341 16.7305C16.2504 16.7305 17.2523 15.7286 17.2523 14.5123C17.2523 13.296 16.2504 12.2941 15.0341 12.2941ZM8.37963 12.2941C7.16333 12.2941 6.16145 13.296 6.16145 14.5123C6.16145 15.7286 7.16333 16.7305 8.37963 16.7305C9.59592 16.7305 10.5978 15.7286 10.5978 14.5123C10.5978 13.296 9.59592 12.2941 8.37963 12.2941ZM8.37963 13.7729C8.79664 13.7729 9.11902 14.0953 9.11902 14.5123C9.11902 14.9293 8.79664 15.2517 8.37963 15.2517C7.96261 15.2517 7.64023 14.9293 7.64023 14.5123C7.64023 14.0953 7.96261 13.7729 8.37963 13.7729ZM15.0341 13.7729C15.4512 13.7729 15.7735 14.0953 15.7735 14.5123C15.7735 14.9293 15.4512 15.2517 15.0341 15.2517C14.6171 15.2517 14.2948 14.9293 14.2948 14.5123C14.2948 14.0953 14.6171 13.7729 15.0341 13.7729Z"
+                                                            fill="#ED5A25"
+                                                        />
+                                                        <path
+                                                            d="M12.8361 1.03687V3.62964H15.38V4.88647H12.8361V7.46655H11.4835V4.88647H8.95032V3.62964H11.4835V1.03687H12.8361Z"
+                                                            fill="#ED5A25"
+                                                            stroke="#ED5A25"
+                                                            stroke-width="0.337081"
+                                                        />
+                                                    </svg>
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collection-nav">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <ul>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                    </ul>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="collection__hidden">
+                                            <div class="img">
+                                                <img
+                                                    src="./iamges/img-collection.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <h3>Card voucher hot news</h3>
+                                            <button class="collection__btn">
+                                                <span>View all</span>
+                                                <div class="icon">
+                                                    <i
+                                                        class="fa-solid fa-arrow-right"
+                                                    ></i>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%- include("./partials/footer.ejs") %>
+            <input type="checkbox" name="checkbox" id="sub" hidden>
+            <section class="sub-menu1">
+                <div class="sub-menu1__title">
+                    <h2>List Card voucher </h2>
+                    <label for="sub">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </div>
+                <div class="line"></div>
+                <ul>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Mobile Game Cards</a>
+                        <span>5</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Game Cards</a>
+                        <span>10</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Payment Cards</a>
+                        <span>12</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Gift Cards</a>
+                        <span>30</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Game Console</a>
+                        <span>49</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Game CD-Key</a>
+                        <span>33</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Video Streaming</a>
+                        <span>34</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Music</a>
+                        <span>56</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Shopping</a>
+                        <span>01</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Telco Prepaid Cards</a>
+                        <span>34</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Tools</a>
+                        <span>05</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Software</a>
+                        <span>6</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Social App</a>
+                        <span>9</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Freebie Codes</a>
+                        <span>10</span>
+                    </li>
+                    <li class="sub-menu1__item">
+                        <a href="" class="sub-menu1__link">Subscript</a>
+                        <span>11</span>
+                    </li>
+                </ul>
+            </section>
+            <input type="checkbox" name="checkbox" id="sub" hidden>
+            <div class="modal"></div>
+        </div>
+        <script type="module" src="./man.js"></script>
+    </body>
 </html>
