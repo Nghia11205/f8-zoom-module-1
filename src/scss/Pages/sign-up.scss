@@ -2,13 +2,13 @@
 @use "/scss/mixin.scss";
 
 .sign-up{
-    background-image: url(./iamges/img-bg1.png);
+    background-image: url(./assets/images/img-bg1.png);
     height: 90rem;
 
     &-wrapper{
         height: 100%;
         width: 100%;
-        background-image: url(./iamges/img-bg2.png);
+        background-image: url(./assets/images/img-bg2.png);
         margin-top: -22px;
         margin-right: -28px;
         display: flex;
