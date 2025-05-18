@@ -103,7 +103,7 @@
         &-list{
             display: flex;
             gap: 2rem;
-
+            height: 100%;
             li{
                 display: flex;
                 align-items: center;
@@ -113,12 +113,108 @@
         a,i{ 
             color:#404040;
             font-size: 14.72px;
+            transition: color 0.3s ease;
+            cursor: pointer;
         }
         a{
             font-weight: 500;
         }
+        &-item{
+            position: relative;
+            display: block;
+            height: 100%;
+            &:hover{
+                a{
+                    color: var(--primary-color);
+                }
+            }
+            input[type="checkbox"]:checked ~ .mega-menu{
+                display: flex;
+            }
+            input[type="checkbox"]:checked ~ .mega-menu__hidden{
+                display: flex;
+            }
+        }
     }
-
+    .mega-menu{
+        // height: 50vh;
+        padding-top: 39px;
+        padding-left: 48px;
+        padding-bottom: 49px;
+        display: none;
+        gap: 23px;
+        flex-direction: column;
+        position: absolute;
+        top: 101%;
+        left: -75%;
+        width: 340px;
+        background: #fff;
+        z-index: 992;
+        &__item{
+            width: 243px;
+            height: 44px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.4s ease;
+            a{
+                display: block;
+                color:#323232;
+                font-family: var(--Manrope);
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px; /* 155.556% */
+            }
+            i{
+                color: #AEAEAE;
+                font-size: 1.5rem;
+                transition: color 0.4s ease;
+                cursor: pointer;
+            }
+            &:hover{
+                background: #F2F2F2;
+                i{
+                    color: var(--primary-color);
+                }
+            }
+            input[type="checkbox"]:checked ~ .mega-menu__list{
+                display: flex;
+            }
+        }
+        &__hidden{
+            position: absolute;
+            background: #909090;
+            mix-blend-mode: multiply;
+            z-index: 990;
+            min-height:1000vh;
+            width: 100vw;
+            top: 100%;
+            left: -189px;
+            display: none;
+        }
+        &__list{
+            display: none;
+            gap: 71px;
+            padding-top: 48px;
+            padding-left: 49px;
+            width: 800px;
+            position: absolute;
+            background: #fff;
+            top:0;
+            left: 340px;
+            z-index: 991;
+            p{
+                color: #323232;
+                font-family:var(--primary-color);
+                font-size: 1.4rem;
+                font-weight: 500;
+                width: 166px;
+                height: 325px;
+                margin-bottom: 27px;
+            }
+        }
+    }
 }
 
 @include mixin.screen(sm){
