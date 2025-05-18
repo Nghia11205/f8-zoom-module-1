@@ -1,0 +1,68 @@
+@use "/scss/variable.scss";
+@use "/scss/mixin.scss";
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 1px solid #ED5A25;
+    background: transparent;
+    box-shadow: 14px 21px 47.1px 0px #FEFEFE;
+    transition: background 0.3s ease;
+    span{
+        color: var(--primary-color);
+        font-family: var(--primary-font);
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2rem;
+        transition: color 0.3s ease;
+    }
+    &:hover{
+        border-radius: 50px;
+        background: var(--primary-color, #ED5A25);
+    }
+    &:hover span{
+        color: #FFF;
+    }
+
+    &--card{
+        width: 190px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: 129.379px;
+        background:#FFF4F1;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-bottom: 13px;
+        transition: background 0.3s ease;
+        & > span{
+            color: var(--primary-color, #ED5A25);
+            font-family: var(--item-font);
+            font-size: 15.525px;
+            font-weight: 400;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+        &:hover{
+            background: var(--primary-color);
+        }
+
+        &:hover > span, &:hover i{
+            color:#fff;
+        }
+    }
+}
+
+
+@include mixin.screen(md){
+    .btn{
+        width: 112px;
+    }
+
+}

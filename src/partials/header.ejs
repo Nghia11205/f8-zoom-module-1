@@ -1,3 +1,140 @@
-<header>
-    <h2>Hello</h2>
+<header class="header">
+    <div class="container">
+        <div class="header__info">
+            <a href="">Về chúng tôi</a>
+            <div class="header__user">
+                <ul>
+                    <li>
+                        <a href="">Trung tâm hỗ trợ</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li>
+                        <a href="">ENG</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <a href="">Tai Khoản</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="logo">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                >
+                    <path
+                        d="M46.2629 23.5001C46.2629 26.5377 45.6645 29.5457 44.5021 32.3521C43.3396 35.1585 41.6358 37.7085 39.4878 39.8565C37.3399 42.0044 34.7899 43.7083 31.9834 44.8707C29.177 46.0332 26.1691 46.6315 23.1314 46.6315C20.0938 46.6315 17.0858 46.0332 14.2794 44.8707C11.473 43.7083 8.92299 42.0044 6.77504 39.8565C4.62709 37.7085 2.92324 35.1585 1.76077 32.3521C0.598312 29.5457 -2.65561e-07 26.5377 0 23.5001L23.1314 23.5001H46.2629Z"
+                        fill="#323232"
+                    />
+                    <path
+                        d="M-3.61248e-05 23.4999C-3.58592e-05 20.4623 0.598277 17.4543 1.76074 14.6479C2.9232 11.8415 4.62705 9.29148 6.775 7.14353C8.92295 4.99558 11.4729 3.29173 14.2794 2.12927C17.0858 0.966802 20.0937 0.36849 23.1314 0.36849C26.1691 0.36849 29.177 0.966803 31.9834 2.12927C34.7898 3.29173 37.3398 4.99558 39.4878 7.14353C41.6357 9.29148 43.3396 11.8415 44.502 14.6479C45.6645 17.4543 46.2628 20.4623 46.2628 23.4999L23.1314 23.4999L-3.61248e-05 23.4999Z"
+                        fill="#ED5A25"
+                    />
+                </svg>
+                <h1 class="logo__thump">Nap <b>Tien</b></h1>
+            </div>
+
+            <form class="header-form" autocomplete="off" spellcheck="false">
+                <div class="header-form__select">
+                    <span>All categories</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="line"></div>
+                <input type="text" name="search" id="" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </section>
+    </div>
+    <div class="header__contact">
+        <div class="container">
+            <ul class="header__contact-list">
+                <li><a href="">Trang chủ</a></li>
+                <li>
+                    <a href="">Thẻ điện thoại</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li>
+                    <a href="">Nạp game</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+            </ul>
+            <div class="phone-number">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+19200 10800">Hotline: 19200 10800</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="subway">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+            >
+                <g clip-path="url(#clip0_3046_6783)">
+                    <path
+                        d="M5.81875 4.3625H10.1812V0H5.81875V4.3625ZM11.6375 0V4.3625H16V0H11.6375ZM0 4.3625H4.3625V0H0V4.3625ZM5.81875 10.1812H10.1812V5.81875H5.81875V10.1812ZM11.6375 10.1812H16V5.81875H11.6375V10.1812ZM0 10.1812H4.3625V5.81875H0V10.1812ZM5.81875 16H10.1812V11.6375H5.81875V16ZM11.6375 16H16V11.6375H11.6375V16ZM0 16H4.3625V11.6375H0V16Z"
+                        fill="#FF9E7B"
+                    />
+                </g>
+                <defs>
+                    <clipPath id="clip0_3046_6783">
+                        <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="number">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+19200 10800">Hotline: 19200 10800</a>
+            </div>
+        </div>
+        <div class="user-action">
+            <label class="sub-label" for="checked" class>
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="user-action__icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" name="checkbox" id="checked" hidden>
+    <div class="modal"></div>
+    <nav>
+        <div class="logo">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="47"
+                height="47"
+                viewBox="0 0 47 47"
+                fill="none"
+            >
+                <path
+                    d="M46.2629 23.5001C46.2629 26.5377 45.6645 29.5457 44.5021 32.3521C43.3396 35.1585 41.6358 37.7085 39.4878 39.8565C37.3399 42.0044 34.7899 43.7083 31.9834 44.8707C29.177 46.0332 26.1691 46.6315 23.1314 46.6315C20.0938 46.6315 17.0858 46.0332 14.2794 44.8707C11.473 43.7083 8.92299 42.0044 6.77504 39.8565C4.62709 37.7085 2.92324 35.1585 1.76077 32.3521C0.598312 29.5457 -2.65561e-07 26.5377 0 23.5001L23.1314 23.5001H46.2629Z"
+                    fill="#323232"
+                />
+                <path
+                    d="M-3.61248e-05 23.4999C-3.58592e-05 20.4623 0.598277 17.4543 1.76074 14.6479C2.9232 11.8415 4.62705 9.29148 6.775 7.14353C8.92295 4.99558 11.4729 3.29173 14.2794 2.12927C17.0858 0.966802 20.0937 0.36849 23.1314 0.36849C26.1691 0.36849 29.177 0.966803 31.9834 2.12927C34.7898 3.29173 37.3398 4.99558 39.4878 7.14353C41.6357 9.29148 43.3396 11.8415 44.502 14.6479C45.6645 17.4543 46.2628 20.4623 46.2628 23.4999L23.1314 23.4999L-3.61248e-05 23.4999Z"
+                    fill="#ED5A25"
+                />
+            </svg>
+            <h1 class="logo__thump">Card<b>tob</b></h1>
+        </div>
+        <label for="checked" class="cancel"><i class="fa-solid fa-xmark "></i></label>
+        <hr>
+        <ul class="sub-menu">
+            <li><a href="">Card voucher</a></li>
+            <li><a href="">Top-Up</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
 </header>

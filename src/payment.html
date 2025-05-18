@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <%- include("./partials/head.ejs")  %>
+</head>
+<body>
+    <div class="payment">
+        <div class="payment__background"><img src="./iamges/img-bg3.jpg" alt=""></div>
+        <div class="payment__wrapper">
+            <div class="container">
+                <section class="payment__main">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="payment__title">ONLINE PAYMENT</h1>
+                        </div>
+                        <div class="col-6 offset-3 col-md-12 offset-sm-0">
+                            <form  class="payment__form" autocomplete="off" spellcheck="false">
+                                <section>
+                                    <h2 class="payment__heading">Thông tin vận chuyển và thanh toán</h2>
+                                    <div class="account">
+                                        <label  class="account__label">
+                                            <span>Tên</span>
+                                            <input type="text" name="name" >
+                                        </label>
+                                        <div class="line"></div>
+                                        <label  class="account__label">
+                                            <span>E-mail</span>
+                                            <input type="mail" name="mail" >
+                                        </label>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <h2 class="payment__heading">Thông tin thanh toán</h2>
+                                    <div class="account-info">
+                                        <label  class="account-info__label">
+                                            <i class="fa-solid fa-money-check"></i>
+                                            <span>Số thẻ</span>
+                                            <input type="text" name="card-number" placeholder="Card number">
+                                        </label>
+                                        <div class="line"></div>
+                                        <label  class="account-info__label">
+                                            <span>Hết hạn</span>
+                                            <input type="text" name="date" placeholder="MM/YY">
+                                        </label>
+                                        <div class="line"></div>
+                                        <label  class="account-info__label">
+                                            <span>Cvc</span>
+                                            <input type="text" name="cvc" placeholder="xxx">
+                                        </label>
+                                    </div>
+                                </section>
+                                <button class="payment__btn "><span>Thanh toán</span></button>
+                                <button class="payment__btn payment__btn--cancel"><span>Huỷ bỏ</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./man.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@use "/scss/mixin.scss";
+@use "/scss/variable.scss";
+.header {
+    position: relative;
+    height: 18.8rem;
+    background: #fff4f1;
+    nav, .subway, .user-action, .modal{
+        display: none;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 100%;
+        height: 3.9rem;
+        background: var(--primary-color);
+        z-index: 0;
+    }
+    &__info {
+        font-size: 1.4rem;
+        font-weight: 500;
+        height: 3.9rem;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            color: #fff;
+            display: block;
+            padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+        }
+    }
+    &__user ul {
+        min-width: 28.5rem;
+        display: flex;
+        gap: 0.4rem;
+    }
+    &__user li{
+        display: flex;
+        align-items: center;
+        color: #fff;
+
+        i{
+            padding-left: 0.5rem;
+        }
+    }
+
+    section{
+        margin-top: 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9.5rem;
+    }
+    &-form{
+        justify-content:flex-end;
+        gap: 5px;
+        display: flex;
+        overflow: hidden;
+        height: 4.2rem;
+        min-width: 48rem;
+        border-radius: 105.143px;
+        border: 1.051px solid #FFF0EC;
+        background: #FFF;
+        color:#AEAEAE;
+        font-family:var(--Manrope);
+        font-size: 14.72px;
+        font-weight: 400;
+        align-items: center;
+        input{
+            width: 28rem;
+            border: none;   
+            outline: none;
+            & + i{
+                padding: 20px;
+            }
+        }
+        &__select{
+            display: flex;
+            width: 115.657px;
+            align-items: center;
+            gap: 5.257px;
+        }
+    }
+    .line{
+        width: 1.051px;
+        height: 100%;        
+        background: #FFF0EC;
+    }
+    &__contact{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        height: 5.4rem;
+        background: #FFF;
+        box-shadow: 0px 4.206px 11.25px 0px rgba(244, 244, 244, 0.50);
+        margin-top: 1.7rem;
+
+        &-list{
+            display: flex;
+            gap: 2rem;
+
+            li{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+        a,i{ 
+            color:#404040;
+            font-size: 14.72px;
+        }
+        a{
+            font-weight: 500;
+        }
+    }
+
+}
+
+@include mixin.screen(sm){
+    .header{
+        background: #fff;
+        height: 106px;
+        &__info, section, &__contact{
+            display: none;
+        }
+        &::before{
+            height: 52px;
+        }
+        .subway{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            position: relative;
+            height: 52px;
+            z-index: 4;
+            a, .number i{
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+            i{
+                font-size: 2rem;
+                color:rgba(255, 158, 123, 1);
+            }
+        }
+        .user-action{
+            align-items: center;
+            height: 54px;
+            display: flex;
+            justify-content: space-between;
+            color: rgba(92, 92, 92, 1);
+            &__icon{
+                display: flex;
+                gap: 1.2rem;
+            }
+            .sub-label{
+                padding: 20px;
+                margin-left: calc(-1* 20px);
+            }
+        }
+        input[type="checkbox"]:checked ~ nav{
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 999;
+            width: 60%; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            height: 100vh;
+            padding: 35px 30px 0 30px;
+            .logo__thump{
+                font-size: 2.5rem;
+            }
+            .cancel{
+                position: absolute;
+                top: 15px;
+                right: 0;
+                padding:0 20px 20px 20px;
+                font-size: 3rem;
+            }
+            .sub-menu{
+                margin-top: 50px;
+                a{
+                    display: block;
+                    padding: 10px;
+                    color:#565656;
+                    font-size: 14.72px;
+                    font-weight: 600;
+                }
+            }
+            hr{
+                margin-top: 20px;
+                height: 1px;
+                background: #F2F2F2;
+                width: 100%;
+            }
+        }
+        input[type="checkbox"]:checked  ~ .modal{
+            position: fixed;
+            inset: 0;
+            z-index: 998;
+            background: #909090;
+            mix-blend-mode: multiply;   
+            display: block;
+        }
+
+    }
+}

@@ -1,0 +1,137 @@
+@use "/scss/mixin.scss";
+@use "/scss/variable.scss";
+.footer{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        content: "";
+        height: 1px;
+        background: #F2F2F2;
+    }
+    min-height: 531px;
+    padding-top: 6rem;
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    &__title{
+        color: #000;
+        font-family: var(--Manrope);
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        & ~ p{
+            color: #000;
+            font-family: var(--form-font);
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-top: 14px;
+        }
+    }
+    &__item a{
+        color: #000;
+        font-family: var(--form-font);
+        font-size: 1.6rem;
+        font-weight: 400;
+        display: flex;
+        padding: 5px 5px 5px 0;
+    }
+
+    .bank{
+        margin-top: 15px;
+        max-width: 241px;
+        display: flex;
+        gap: 15px 8px;
+        flex-wrap: wrap;
+        img{
+            border-radius: 5px;
+            border: 1px solid var(--Greys-Colors-06, #F2F2F2);
+            background: #FFF;
+        }
+        img[src*="paypal"]{
+            width: 77px;
+            height: 28px;
+        }
+        img[src*="img-2"]{
+            width: 120px;
+            height: 30px;
+        }
+        img[src*="img-3"]{
+            width: 70px;
+            height: 30px;
+        }
+        img[src*="img-4"]{
+            width: 127px;
+            height: 30px;
+        }
+        img[src*="pic-5"]{
+            width: 142px;
+            height: 30px;
+        }
+        img[src*="pic-6"]{
+            width: 73pxx;
+            height: 30px;
+        }
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        img{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        a{
+            color: #3E3E3E;
+            font-family: var(--Manrope);
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    &__images{
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__bottom{
+        background:  #FFF4F1;
+        margin-top: 36px;
+        width: 100%;
+        text-align: center;
+        span{
+            color: #909090;
+            font-family: var(--form-font);
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+@include mixin.screen(xs){
+    .footer{
+        overflow: hidden;
+        &__images{
+            .img{
+                width: 160px;
+            }
+            .img1{
+                width: 40px;
+                height: 40px;
+            }
+            .img2{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

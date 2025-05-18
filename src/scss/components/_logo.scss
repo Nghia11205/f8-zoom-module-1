@@ -1,0 +1,20 @@
+@use"/scss/variable.scss";
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    &__thump{
+        color: #404040;
+        font-family: var(--item-font);
+        font-size: 32.384px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46.263px; /* 142.857% */
+
+        b{
+            color: var(--primary-color);
+        }
+    }
+}

@@ -1,0 +1,282 @@
+@use "/scss/variable.scss";
+@use "/scss/mixin.scss";
+
+.account{
+    &__main{
+        min-height: 75.4rem;
+        margin-top: 34px;
+        position: relative;
+        display: flex;
+        margin-bottom: 5.5rem ;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    &__wrapper{
+        margin-top: 121px;
+    }
+    &-modal{
+        background: #FFE7E0;
+        height: 228px;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+
+    &__info{
+        min-height: 62.8rem;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #E5E5E5;
+        background: #FFF;
+
+        span{
+            display: inline-flex;
+            padding: 4px 12px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+            border-radius: 100px;
+            background:#FFDBCE;
+            color: var(--Color-Text-01, #323232);
+            font-family: var(--form-font);
+            font-size: 1.2rem;
+            font-weight: 400;
+            height: 1.5rem;
+        }
+        .line{
+            margin-top: 3.2rem;
+            text-align: center;
+        }
+    }
+    &__avatar{
+        position: relative;
+        margin-top: 5.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon{
+        width: 25px;
+        height: 25px;
+        background:var(--primary-color);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 10%;
+        right: 30%;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 1.5rem;
+        }
+    }
+    &__title{
+        color: var(--Color-Text-01, #323232);
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2.4rem;
+
+        & + div{
+            display: block;
+            text-align: center;
+        }
+    }
+    &__list{
+        margin-top: 4rem;
+        padding-left: 5.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__item{
+        padding-left: 2rem;
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+        a{
+            color: #454545;
+            font-family: var(--primary-font);
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        &:hover {
+            width: 259px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: var(--Secondary-Colors-12, #FFF4F1);
+            box-shadow: -5px 4px 17.3px 0px rgba(248, 248, 248, 0.50);
+        }
+        &:hover a,&:hover svg {
+            color: var(--primary-color);
+        }
+    }
+
+    &__content{
+        height: 628px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid var(--Greys-Colors-05, #E5E5E5);
+        background: #FFF;
+        padding-left: 2.9rem;
+        padding-right: 3.8rem;
+    }
+
+    &__heading{
+        margin-top: 4.7rem;
+        color: var(--Color-Text-01, #323232);
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__product{
+        height: 167px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid var(--Greys-Colors-05, #E5E5E5);
+        background: #FFF;
+        margin-top: 2.4rem;
+        .line{
+            display: block;
+            text-align: center;
+        }
+        h3{
+            margin-top: 1.8rem;
+            margin-left: 2.6rem;
+            color: #353535;
+            font-family: var(--primary-font);
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .history{
+            display: flex;
+            justify-content: space-between;
+        }
+        .component{
+            margin-top: 1.8rem;
+            margin-right: 2.3rem;
+            color:rgba(127, 127, 127, 0.50);
+            font-family: var(--form-font);
+            font-size: 1.2rem;
+            font-weight: 400;
+
+            i{
+                rotate: 270deg;
+            }
+        }
+
+        .status{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5.2rem;
+            span{
+                color: #454545;
+                text-align: center;
+                font-family: var(--primary-font);
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            .quantity{
+                color: var(--primary-color, #ED5A25);
+                text-align: center;
+                font-family: var(--primary-font);
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+        
+    }
+
+    &__bottom{
+        margin-top: 4.2rem;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 1.8rem;
+        align-items: center;
+        &-price{
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            span{
+                width: 118px;
+                color: var(--primary-color, #ED5A25);
+                font-family: var(--primary-font);
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__btn{
+        height: 2.3rem;
+        border: none;
+        border-radius: 100px;
+        background: var(--Secondary-Colors-11, #FFDBCE);
+        display: flex;
+        padding: 4px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--Color-Text-01, #323232);
+        font-family: var(--form-font);
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+
+@include mixin.screen(lg){
+    .account{
+        &__icon{
+            right: 25%;
+        }
+        &__list{
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+@include mixin.screen(md){
+    .account{
+        &__main{
+            min-height: 89.4rem;
+        }
+        &__icon{
+            right: 15%;
+        }
+    }
+}
+
+@include mixin.screen(sm){
+    .account{
+        &__icon{
+            right: 38%;
+        }
+        &__avatar img{
+            width: 120px;
+            height: 120px;
+        }
+        &__product .status span{
+            font-size: 1rem;
+        }
+
+        &__item a{
+            font-size: 1.2rem;
+        }
+        &__list{
+            padding-left: 1rem;
+        }
+        .line{
+            display: none;
+        }
+    }
+}

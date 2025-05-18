@@ -1,0 +1,17 @@
+$grid-breakpoints: (
+    xl: 1400px,
+    lg: 1200px,
+    md: 992px,
+    sm: 768px,
+    xs: 576px,
+);
+:root{
+    --Manrope:"Manrope", sans-serif;
+    --primary-font:"Quicksand", sans-serif;
+    --form-font:"Inter", sans-serif;
+    --item-font:"Poppins", sans-serif;
+    --primary-color:#ED5A25;
+    --Greys-Colors-01:#404040;
+    --Color-Text-01:#323232;
+    --Neutrals-Neutrals-1:#171923;
+}

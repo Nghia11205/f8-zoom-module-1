@@ -1,0 +1,52 @@
+@use "/scss/variable.scss";
+@use "/scss/mixin.scss";
+.gift-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 70px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .img{
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    h5{
+        color: #000;
+        font-family: var(--item-font);
+        font-size: 15.525px;
+        font-weight: 500;
+    }
+    span{
+        color: var(--primary-colors, #ED5A25);
+        font-family: var(--primary-font);
+        font-size: 15.525px;
+        font-weight: 600;
+    }
+
+    &__bottom{
+        align-items: center;
+        display: flex;
+        gap: 4px;
+        i{
+            color: var(--primary-color);
+            font-size: 1rem;
+        }
+        span{
+            color: #787777;
+            font-family: var(--primary-font);
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 2rem;
+        }
+        .evaluate{
+            color: #3E3E3E;
+        }
+    }
+}

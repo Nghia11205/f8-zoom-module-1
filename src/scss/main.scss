@@ -1,11 +1,21 @@
-@use "./base";
+@use "./base/reset";
+@use "./base/base";
 
 //layout
 @use "./layout/grid";
+@use "./layout/header";
+@use "./layout/footer"; 
 
 //Pages
 @use "./Pages/home";
+@use "./Pages/account";
+@use "./Pages/collection";
+@use "./Pages/payment";
+@use "./Pages/sign-in";
+@use "./Pages/sign-up";
 
 //Component
-
-@use "./components/button"
+@use "./components/logo";
+@use "./components/card-item";
+@use "./components/button";
+@use "./components/gift-card";
