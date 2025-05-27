@@ -121,16 +121,9 @@
     .footer{
         overflow: hidden;
         &__images{
-            .img{
-                width: 160px;
-            }
-            .img1{
-                width: 40px;
-                height: 40px;
-            }
-            .img2{
-                width: 40px;
-                height: 40px;
+            img{
+                width: auto;
+                height: 74px;
             }
         }
     }
